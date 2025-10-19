@@ -44,9 +44,10 @@ $rows = $pdo->query('SELECT id, title, type, category_id, poster_url FROM conten
 <body>
   <h2>Contents</h2>
   <nav>
-    <a href="/backend/admin/dashboard.php">Dashboard</a> |
-    <a href="/backend/admin/categories.php">Categories</a> |
-    <a href="/backend/admin/logout.php">Logout</a>
+    <a href="/admin/dashboard.php">Dashboard</a> |
+    <a href="/admin/categories.php">Categories</a> |
+    <a href="/admin/episodes.php">Episodes</a> |
+    <a href="/admin/logout.php">Logout</a>
   </nav>
 
   <h3>Create Content</h3>

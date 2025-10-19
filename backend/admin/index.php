@@ -3,7 +3,7 @@ require_once __DIR__ . '/../lib/config.php';
 require_once __DIR__ . '/../lib/auth.php';
 
 if (!empty($_SESSION['admin_logged_in'])) {
-  header('Location: /backend/admin/dashboard.php');
+  header('Location: /admin/dashboard.php');
   exit;
 }
 
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   global $ADMIN_USER, $ADMIN_PASS;
   if ($u === $ADMIN_USER && $p === $ADMIN_PASS) {
     $_SESSION['admin_logged_in'] = true;
-    header('Location: /backend/admin/dashboard.php');
+    header('Location: /admin/dashboard.php');
     exit;
   } else {
     $error = 'Invalid credentials';

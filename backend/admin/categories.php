@@ -35,9 +35,10 @@ $rows = $pdo->query('SELECT id, name, slug FROM categories ORDER BY name ASC')->
 <body>
   <h2>Categories</h2>
   <nav>
-    <a href="/backend/admin/dashboard.php">Dashboard</a> |
-    <a href="/backend/admin/contents.php">Contents</a> |
-    <a href="/backend/admin/logout.php">Logout</a>
+    <a href="/admin/dashboard.php">Dashboard</a> |
+    <a href="/admin/contents.php">Contents</a> |
+    <a href="/admin/episodes.php">Episodes</a> |
+    <a href="/admin/logout.php">Logout</a>
   </nav>
 
   <h3>Create Category</h3>

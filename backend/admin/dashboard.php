@@ -22,9 +22,10 @@ $liveCount = $pdo->query("SELECT COUNT(*) AS c FROM contents WHERE type='live'")
 <body>
   <h2>Dashboard</h2>
   <nav>
-    <a href="/backend/admin/categories.php">Categories</a> |
-    <a href="/backend/admin/contents.php">Contents</a> |
-    <a href="/backend/admin/logout.php">Logout</a>
+    <a href="/admin/categories.php">Categories</a> |
+    <a href="/admin/contents.php">Contents</a> |
+    <a href="/admin/episodes.php">Episodes</a> |
+    <a href="/admin/logout.php">Logout</a>
   </nav>
   <div class="grid" style="margin-top:1rem">
     <div class="card">Categories: <?php echo (int)$categoryCount; ?></div>

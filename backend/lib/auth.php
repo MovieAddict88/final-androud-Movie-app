@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 function require_admin(): void {
   if (empty($_SESSION['admin_logged_in'])) {
-    header('Location: /backend/admin/index.php');
+    header('Location: /admin/index.php');
     exit;
   }
 }
